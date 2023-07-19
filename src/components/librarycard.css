@@ -1,0 +1,48 @@
+/* Card Container */
+.card {
+  display: flex;
+  align-items: center;
+  /* width: 400px; */
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.card:hover {
+  background-color: rgb(44, 41, 41);
+  cursor: pointer;
+}
+
+/* Image on the Left */
+.card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  margin-right: 16px;
+}
+
+/* Content on the Right */
+.card .content {
+  flex-grow: 1;
+}
+
+/* Title on Top */
+.card .title {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+/* Sublabels at the Bottom */
+.card .sublabel {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Separator */
+.card .sublabel::before {
+  content: '*';
+  margin: 0 8px;
+}
+
+ul {
+  padding-inline-start: 10px;
+}
